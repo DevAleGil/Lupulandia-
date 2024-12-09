@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-1">
+        <img class="menu" src="./assets/iconos/icono-menu.png" alt="menu" />
+        <div class="header-redes">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Inicio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#productos">Productos</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#contacto">Contacto</a>
+          </li>
+        </nav>
+        <div class="chop-container">
+          <img
+            src="./assets/iconos/icons8-cerveza-50.png"
+            alt="carrito-cerveza"
+            class="chop"
+          />
+          <span class="chop-cantidad">0</span>
+        </div>
+      </div>
+
+      <div class="carrito">
+        <button class="btn-cerrar-carrito">X</button>
+        <h3 class="carrito-titulo"></h3>
+        <div class="container-carrito"></div>
+        <span class="divisor"></span>
+        <div class="carrito-total">
+          <h4>Total</h4>
+          <span class="total">$ 0</span>
+        </div>
+
+        <div class="carrito-btns">
+          <button class="carrito-btn-comprar">Comprar</button>
+          <button class="carrito-btn-vaciar">Vaciar carrito</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-logo">
+        <div class="section-logo-container">
+          <div class="busqueda">
+            <label for="lupa"
+              ><i class="fa-solid fa-magnifying-glass lupa"></i
+            ></label>
+            <input type="text" id="lupa" placeholder="Buscar..." />
+          </div>
+
+          <img src="./assets/iconos/logo-lupulandia.png" class="logo" alt="" />
+
+          <ul class="section-logo-usuarios">
+            <li><a href="#">Registrase</a></li>
+            <li><a href="#">Iniciar sesión</a></li>
+          </ul>
+        </div>
+
+        <div class="section-logo-parrafo">
+          <p>¡¡¡Buena vida...Buenas Birras!!!</p>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="container-carrusel">
+          <div class="carrusel">
+            <div class="slider">
+              <img src="./assets/imagenes-carrusel/imagen-1.jpg" />
+              <p>Contamos con la mayor variedad de lúpulos del mercado.</p>
+            </div>
+            <div class="slider">
+              <img src="./assets/imagenes-carrusel/imagen-2.jpg" />
+              <p>
+                Equipamiento para elabaración de grandes volúmenes de cerveza.
+              </p>
+            </div>
+            <div class="slider">
+              <img src="./assets/imagenes-carrusel/imagen-3.avif" />
+              <p>
+                Encontrarás todos los insumos necesarios para obtener los
+                diferentes estilos de cervezas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nosotros" id="nosotros">
+        <h2>¿QUIENES SOMOS?</h2>
+        <hr />
+        <p>
+          <strong
+            >Bienvenidos a Lupulandia, el mundo de la cerveza artesanal.
+          </strong>
+        </p>
+        <p>
+          Con más de 10 años de experiencia, somos un equipo de cerveceros
+          apasionados por el arte de la cerveza artesanal, dedicados a ofrecer
+          los mejores insumos para que puedas crear cervezas excepcionales en
+          casa. Desde nuestros comienzos, nuestra misión ha sido brindar a los
+          cerveceros de todos los niveles – desde los principiantes hasta los
+          más experimentados – una amplia selección de ingredientes de alta
+          calidad, junto con el asesoramiento y el apoyo que necesitan para
+          llevar sus creaciones al siguiente nivel.
+        </p>
+        <p>
+          Nuestra tienda online nace de la idea de crear un espacio donde los
+          amantes de la cerveza artesanal encuentren productos de calidad,
+          variedad y frescura, y un equipo comprometido que entiende las
+          necesidades y desafíos de la elaboración casera. Queremos ser mucho
+          más que solo una tienda de insumos; en Lupulandia, buscamos ser tu
+          compañero de confianza en cada etapa de tu proceso cervecero, desde la
+          selección de los ingredientes hasta el embotellado final.
+        </p>
+        <p>
+          En Lupulandia, creemos que la mejor cerveza comienza con los mejores
+          ingredientes, y estamos aquí para ayudarte a hacer de tu proyecto
+          cervecero algo único. Únete a nuestra comunidad y comparte la pasión
+          por la cerveza artesanal. ¡Gracias por confiar en Lupulandia, tu
+          tienda online de insumos cerveceros!
+        </p>
+      </section>
+      <section class="section-productos" id="productos">
+        <div class="modal-producto">
+          <div class="modal-container">
+            <img class="img-modal" />
+            <div class="modal-info">
+              <h2 class="titulo-modal"></h2>
+              <p class="descripcion-modal"></p>
+              <button class="btn-modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+        <h2>NUESTROS PRODUCTOS</h2>
+        <hr />
+        <div class="categorias-productos">
+          <button id="todos" class="boton-categoria activo">Todos</button>
+          <button id="malta" class="boton-categoria">Maltas</button>
+          <button id="lupulo" class="boton-categoria">Lupulos</button>
+          <button id="equipo" class="boton-categoria">Equipos</button>
+          <button id="levadura" class="boton-categoria">Levaduras</button>
+        </div>
+        <div class="productos-container"></div>
+      </section>
+      <section class="section-informacion">
+        <div class="section-informacion-1">
+          <p>
+            Somos tu mejor aliado para crear y optimizar tu cerveza artesanal.
+          </p>
+        </div>
+        <div class="section-informacion-2">
+          <div class="section-informacion-2-container">
+            <div>
+              <h2>Desde 2022 ayudando a miles de cerveceros</h2>
+              <p>
+                Brindamos todas nuestras experiencias a la comunidad cervecera.
+              </p>
+            </div>
+            <div>
+              <h2>Variedad de insumos y equipamientos.</h2>
+              <p>
+                Contamos con la mayor variedad de insumos y equipos para la
+                fabricacion del estilo que mas te guste. Y por
+                supuesto,trabajamos con marcas líderes del mercado!!!
+              </p>
+            </div>
+          </div>
+
+          <div class="img-cervesas">
+            <img src="./assets/iconos/imagen-cervezas.jpg" alt="cervezas" />
+          </div>
+
+          <div class="section-informacion-2-container">
+            <div>
+              <h2>Desde principiantes a expertos.</h2>
+              <p>
+                En Lupulandia estamos preparados para ayudarte en todo momento.
+                Si apenas estás empezando o ya tienes una cervecería
+                establecida, ¡no dudes en contar con nosotros!
+              </p>
+            </div>
+            <div>
+              <h2>Fanáticos por el mundo cervecero</h2>
+              <p>
+                No somos improvisados, estamos capacitados para asesorarte en
+                insumos, estilos, fabricación y procesos cerveceros, con el
+                objetivo de que puedas crear un producto de excelencia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h2>CONTACTO</h2>
+        <hr />
+        <form class="formulario">
+          <div class="formulario-container">
+            <div class="formulario-info">
+              <div class="formulario-input">
+                <label for="name">Nombre </label>
+                <input type="text" id="nombre" autocomplete="off" />
+                <span class="mensaje-nombre"></span>
+              </div>
+              <div class="formulario-input">
+                <label for="surname">Apellido </label>
+                <input type="text" id="apellido" autocomplete="off" />
+                <span class="mensaje-apellido"></span>
+              </div>
+              <div class="formulario-input">
+                <label for="age">Edad</label>
+                <input type="number" id="edad" autocomplete="off" />
+                <span class="mensaje-edad"></span>
+              </div>
+              <div class="formulario-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" />
+                <span class="mensaje-email"></span>
+              </div>
+              <div class="formulario-input">
+                <label for="sex">Sexo </label>
+                <select id="sex">
+                  <option value="femenino">Femenino</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="no-binario">No binario</option>
+                </select>
+              </div>
+            </div>
+            <div class="formulario-textarea">
+              <label for="message"
+                >Consultanos y te responderemos a la brevedad</label
+              >
+              <textarea
+                name=""
+                id="message"
+                cols="40"
+                rows="15"
+                placeholder="Escribe tu consulta..."
+              ></textarea>
+            </div>
+          </div>
+
+          <input class="formulario-input-submit" type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-1">
+        <div class="footer-pagos">
+          <h3>MEDIOS DE PAGOS</h3>
+          <div>
+            <img src="./assets/iconos/icono-visa.png" alt="" />
+            <img src="./assets/iconos/icono-master.png" alt="" />
+            <img src="./assets/iconos/icono-amex.png" alt="" />
+            <img src="./assets/iconos/icono-mp.png" alt="" />
+            <img src="./assets/iconos/icono-naranja.png" alt="" />
+            <img src="./assets/iconos/icono-dni.jpg" alt="" />
+          </div>
+        </div>
+        <div class="footer-redes">
+          <h3>CONTACTOS</h3>
+          <div class="footer-container-redes">
+            <div>
+              <i class="fa-brands fa-facebook"></i
+              ><a href="#">mifacebook.com</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-instagram"></i
+              ><a href="#">instagram.com</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-twitter"></i><a href="#">twitter.com</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-whatsapp"></i><a href="#">11- 987654321</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="#">correo@gamil.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-navegacion">
+          <h3>NAVEGACIÓN</h3>
+          <ul class="footer-navegacion-lista">
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Promociones bancarias</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-2">
+        <p>Todos los derechos reservados - Hecho por Alejandro Gil</p>
+      </div>
+      <div class="modal"></div>
+    </footer>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/contacto.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/carrusel.js"></script>
+  </body>
+</html>
